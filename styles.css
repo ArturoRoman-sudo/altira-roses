@@ -47,10 +47,11 @@ header {
     text-align: center;
 }
 
-.cards {
+.cards-container {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .card {
@@ -58,7 +59,8 @@ header {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 2rem);
+    max-width: 400px;
+    width: 45%;
 }
 
 .card h3 {
