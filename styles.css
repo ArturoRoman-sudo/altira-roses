@@ -102,3 +102,9 @@ header {
     color: #ff85a2;
     border-radius: 8px;
 }
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
