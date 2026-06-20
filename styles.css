@@ -5,51 +5,79 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
+    font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+    background-color: #0a0a0a;
     color: #ffffff;
 }
 
 header {
-    background-color: #333333;
-    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ff85a2;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e63946;
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
 .cards {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 .card {
-    background-color: #444444;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 45%;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2rem);
+}
+
+.card h3 {
+    color: #ff85a2;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #cccccc;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
     justify-content: center;
+}
+
+.product {
+    background-color: #222222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .product img {
@@ -57,11 +85,22 @@ nav ul li a {
     height: auto;
 }
 
+.product p {
+    margin-top: 0.5rem;
+    color: #cccccc;
+}
+
 footer {
-    background-color: #333333;
-    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 0.8rem;
 }
