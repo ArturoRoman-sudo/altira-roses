@@ -19,21 +19,26 @@ header {
     z-index: 1000;
 }
 
-nav ul {
-    list-style-type: none;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul li a {
+.logo {
+    color: #ff85a2;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
     color: #ff85a2;
     text-decoration: none;
     font-size: 1.2rem;
+    margin-left: 1rem;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
     color: #e63946;
 }
 
