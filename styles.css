@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(15, 15, 15, 0.88), rgba(15, 15, 15, 0.88)), url('altira.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url('altira.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #121212;
     color: #ffffff;
