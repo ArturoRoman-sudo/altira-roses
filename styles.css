@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url('altira.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url('imagenes/altira.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #121212;
     color: #ffffff;
@@ -104,4 +104,59 @@ body {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
+}
+
+/* Contacto */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 2rem;
+}
+
+.contact-list li a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #ff85a2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: rgba(30, 30, 30, 0.6);
+    padding: 14px 32px;
+    border-radius: 8px;
+    min-width: 300px;
+    transition: color 0.3s ease;
+}
+
+.contact-list li a:hover {
+    color: #e63946;
+}
+
+.contact-list li a i {
+    font-size: 1.4rem;
+    width: 24px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 24px 40px;
+    margin-top: 2rem;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    margin: 4px 0;
+}
+
+footer .footer-brand {
+    color: #ff85a2;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
